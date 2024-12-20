@@ -1,0 +1,20 @@
+openapi: 3.0.1
+info:
+  title: 'API de Exemplo Spring Boot 3.4'
+  description: 'Esta é uma API de exemplo para demonstrar Swagger com YAML em Spring Boot 3.4'
+  version: 'v1.0.0'
+  license:
+    name: 'Apache 2.0'
+    url: 'http://springdoc.org'
+paths:
+  /api/v1/hello:
+    get:
+      summary: 'Exemplo de endpoint Hello World'
+      operationId: 'sayHello'
+      responses:
+        '200':
+          description: 'Retorna uma saudação simples'
+          content:
+            text/plain:
+              schema:
+                type: string
